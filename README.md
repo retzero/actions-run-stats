@@ -152,5 +152,7 @@ plt.grid(True)
 plt.show()
 ```
 
-
+```python
+number_of_pull_requests = sess.get(f'{api_url}/search/issues?q=+type:pr+repo:{org}/{repo}').json().get('total_count')
+```
 
